@@ -1,0 +1,25 @@
+{
+  "cabins": [
+    {
+      "id": "cabin-001",
+      "name": "Pine Retreat",
+      "regularPrice": 120,
+      "image": "/cabin-images/cabin-001.png",
+      "description": "Cozy pine cabin close to the lake."
+    },
+    {
+      "id": "cabin-002",
+      "name": "Lakeside Haven",
+      "regularPrice": 150,
+      "image": "/cabin-images/cabin-002.png",
+      "description": "Beautiful views over the lake with private dock."
+    },
+    {
+      "id": "cabin-003",
+      "name": "Willow Nest",
+      "regularPrice": 95,
+      "image": "/cabin-images/cabin-003.png",
+      "description": "Small comfortable cabin surrounded by willows."
+    }
+  ]
+}

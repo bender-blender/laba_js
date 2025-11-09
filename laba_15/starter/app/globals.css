@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* colors */
+:root{
+  --primary-900: #031019;
+  --primary-800: #05202b;
+  --primary-200: #9ad3d6;
+  --accent-500: #ffd166;
+}
+
+body { background: var(--primary-900); color: white; }
+
+@layer components {
+  .spinner {
+    margin: 3.2rem auto 1.6rem;
+    width: 60px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid rgba(255,255,255,0.12);
+    border-right-color: rgba(255,255,255,0.5);
+    animation: rotate 1s infinite linear;
+  }
+  .spinner-mini {
+    margin: 0;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-right-color: transparent;
+    animation: rotate 1s infinite linear;
+  }
+}
+@keyframes rotate { to { transform: rotate(360deg); } }
+
+.container { max-width: 1100px; margin: 0 auto; }
+.card { background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01)); padding: 1rem; border-radius: 0.5rem; }
